@@ -21,7 +21,6 @@ let gameOver = false;
 
 boxs.forEach((box)=> {
     box.addEventListener("click" , ()=>{
-        console.log("box was clicked")
         if(xTurn){
            box.innerText = "x";
            xTurn = false;   
@@ -78,13 +77,30 @@ const checkWinner = () => {
 
          if(pos1 != "" && pos2 != "" && pos3 != ""){
         if(pos1 === pos2 && pos2 === pos3){
-            console.log("winner")
             winnerShow(pos1);
-            gameOver = true;
+        }
+        else{
+            drawGame();
         }
     }
     }
 };
+
+// function for draw game
+
+const drawGame = ()=>{
+   let count = 0;
+   boxs.forEach((box)=>{
+    if(box.innerText != ""){
+        count++;
+    }
+   });
+    if(count === 9 && !gameOver){
+        message.innerText = "Game is Draw";
+        document.querySelector('.msg-container').style.display = 'flex';
+        disableAllBox();
+    }
+}
 
 btnNew.addEventListener("click", resetAllBox);
 reset.addEventListener("click", resetAllBox);
