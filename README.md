@@ -27,11 +27,11 @@ Play against a friend in this classic 3x3 grid game.
 
 ## 📂 Project Structure
 
-``` tic-tac-toe/
-│── index.html # Main HTML file
-│── style.css # Styling
-│── script.js # Game logic
-└── README.md # Documentation
+- tic-tac-toe/
+-│── index.html # Main HTML file
+-│── style.css # Styling
+-│── script.js # Game logic
+-└── README.md # Documentation
 
 
 ---
