@@ -31,7 +31,7 @@ Play against a friend in this classic 3x3 grid game.
 │── index.html # Main HTML file
 │── style.css # Styling
 │── script.js # Game logic
-└── README.md # Documentation```
+└── README.md # Documentation
 
 
 ---
@@ -55,4 +55,4 @@ _ ![alt text](screenshorts/image-2.png)
 ## 💻 Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/FarwaRafiq/Tic-Tac-Toe.git
+   git clone https://github.com/FarwaRafiq/Tic-Tac-Toe.git 
